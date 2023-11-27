@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: url("./Assets/Game\ page.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-div{
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-top: 4%;
+    width:  35vw;
+    height: 60vh;
+    background-color: rgb(156, 24, 24);
+    text-align: center;
+    border-radius: 30px;
+}
+
+#heading{
+    color: white;
+    padding-top: 3vh;
+}
+
+#word{
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.main-div>p{
+    color: white;
+    margin-top: 35px;
+    font-size: 23px;
+}
+
+.inner-div{
+    /* border: 2px solid black; */
+    width: 30vw;
+    height: 30vh;
+    margin: auto;
+    margin-top: 35px;
+}
+.inner-div>input{
+    margin-top: 20px;
+    width: 25vw;
+    height: 6vh;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.inner-div>img{
+    position: relative;
+    top: 2vh;
+    width: 40px;
+    height: 40px;
+}
+
+button{
+    margin-top: 35px;
+    width: 11vw;
+    height: 8vh;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#refresh-btn{
+    margin-right: 10px;
+    background-color: rgb(249,239,190);
+}
+
+#refresh-btn:hover{
+    box-shadow: rgba(249,239,190,0.3) 0px 19px 38px, rgba(249,239,190, 0.3) 0px 15px 12px;
+}
+
+#check-btn{
+    margin-left: 10px;
+    background-color: rgb(182,232,243);
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+}
+#check-btn:hover{
+    box-shadow: rgba(182,232,243,0.3) 0px 19px 38px, rgba(182, 232, 243, 0.3) 0px 15px 12px;
+}
+
+#Timer-div{
+    /* border: 2px solid red; */
+    text-align: center;
+    position: relative;
+    left: 88vw;
+    background-color: rgb(249, 90, 90);
+    height: 35px;
+    width: 10vw;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#correct-message {
+    background: url("https://media.tenor.com/t4QZ8hX83NAAAAAi/party-confetti.gif");
+    background-color: #f9a5a5;
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 34%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#correct-message>h1{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #f9a5a5;
+    text-shadow: 2px 2px black;
+}
+#correct-message>p{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #f9a5a5;
+    text-shadow: 1px 2px black;
+}
+
+#correct-message img {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+}
+#correct-message button{
+    width:30%;
+    max-width: 400px;
+    background-color: rgb(255, 166, 166);
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#correct-message button:hover{
+    width:32%;
+    height: 8vh;
+    max-width: 400px;
+    background-color: rgba(255, 242, 0, 0.902);
+    color: rgb(255, 166, 166);
+    text-shadow: 1px 1px black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#incorrect-message {
+    background: url("https://media.tenor.com/AxjDbq4O09MAAAAi/haha.gif");
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 34%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#incorrect-message>h1{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #f5f9a5;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+}
+#incorrect-message>p{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #f5f9a5;
+    text-shadow: 1px 2px red;
+}
+
+#incorrect-message img {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+}
+#incorrect-message button{
+    width:30%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    width:30%;
+    max-width: 400px;
+    background-color: red;
+    color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#incorrect-message button:hover{
+    width:32%;
+    height: 8vh;
+    max-width: 400px;
+    background-color: rgba(255, 242, 0, 0.902);
+    color: red;
+    text-shadow: 2px 1px black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#music{
+    /* border: 2px solid red; */
+    height: 3vw;
+    width: 25vw;
+    position: relative;
+    left: 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.song-icon{
+    width: 2vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+.song-icon:hover{
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#audio-icon{
+    background-color: white;
+}

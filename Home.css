@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("./Assets/Desktop\ -\ 4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#heading-1{
+    text-align: center;
+    color: rgb(255, 200, 200);
+    margin-top: 30px;
+    font-family: 'Inknut Antiqua', serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+#heading-2{
+    text-align: center;
+    color: rgb(173, 0, 0);
+    font-size: 80px;
+    font-family: 'Nosifer', sans-serif;
+}
+
+
+#instruction{
+    /* border: 2px solid red; */
+    width: 27vw;
+    height: 33vh;
+    margin: auto;
+    padding: 0 20px 0  20px;
+    background-color: rgba(255, 255, 255, 20%);
+    border-radius: 35px;
+}
+#instruction>h2{
+    color: rgb(253, 183, 183);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.5vw;
+}
+#instruction>ul{
+    color: white;
+    font-size: 1vw;
+    font-weight: 550;
+    margin-left: 20px;
+    padding-top: 20px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.input-play{
+    /* border: 2px solid red; */
+    height: 13.889vh;
+    width: 23vw;
+    margin-left: 38vw;
+    margin-top: 1%;
+}
+
+input{
+    padding-left: 10px;
+    width: 350px;
+    height: 45px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(146, 145, 145);
+    border: none;
+    border-radius: 5px;
+}
+
+#user-name{
+    margin-bottom: 1vh;
+}
+
+button{
+    /* border: 2px solid red; */
+    width: 160px;
+    height: 75px;
+    margin-left: 90px;
+    margin-top: 15px;
+    font-size: xx-large;
+    color: red;
+    background-color: rgba(57, 52, 52, 0.6);
+    border-radius: 30px;
+    font-family: 'Nosifer', sans-serif;
+}
+
+button:hover{
+    background-color: red;
+    color: rgb(1, 0, 0);
+    box-shadow: rgba(251, 38, 38, 0.3) 0px 19px 38px, rgba(251, 38, 38, 0.3) 0px 15px 12px;
+}
+
+
+@media (max-width: 1837px) {
+    body {
+        background-color: black;
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        background: none;
+        background-color: black;
+    }
+
+    #instruction {
+        width: 65vw;
+        height: 30vh;
+    }
+
+    #instruction > h2 {
+        font-size: 4vw;
+    }
+
+    #instruction > ul {
+        font-size: 3vw;
+    }
+
+    .input-play {
+        height: 25vh;
+        width: 70vw;
+        margin: auto;
+    }
+
+    input {
+        padding-left: 10px;
+        margin-left: 2.1vw;
+        width: 65vw;
+        height: 5vh;
+        border-radius: 5px;
+    }
+
+    button {
+        margin: auto;
+        margin-left: 15vw;
+    }
+}

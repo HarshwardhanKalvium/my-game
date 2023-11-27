@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Game.css">
+</head>
+<body>
+    <div id="music">
+        <img class="song-icon" id="music-1" src="./covers/1.jpeg" alt="">
+        <img class="song-icon" id="music-2" src="./covers/2.jpeg" alt="">
+        <img class="song-icon" id="music-3" src="./covers/3.jpg" alt="">
+        <img class="song-icon" id="music-4" src="./covers/4.png" alt="">
+        <img class="song-icon" id="music-5" src="./covers/5.jpg" alt="">
+        <img class="song-icon" id="music-6" src="./covers/6.jpg" alt="">
+        <img class="song-icon" id="music-7" src="./covers/7.jpeg" alt="">
+        <img class="song-icon" id="music-8" src="./covers/8.webp" alt="">
+        <img class="song-icon" id="music-9" src="./covers/9.webp" alt="">
+        <img class="song-icon" id="music-10" src="./covers/10.png" alt="">
+        <img class="song-icon audio-icon" id="audio-icon" src="./covers/audio icon.png" alt="">
+    </div>
+    <div id="Timer-div">
+        <h3 id="">Time left:-<span id="countdown"> 0</span></h3>
+    </div>
+    <div class="main-div">
+        <h1 id="heading"><u>Multiverse Jumble</u></h1>
+        <h1 id="word"></h1>
+        <p id="hint">Hint:-<span id="hint-text"></span></p>
+        <div class="inner-div">
+            <input type="text" placeholder="Do. Or do not. There is no try" id="input">
+            <img src="./Assets/master yoda.png" alt="masteryoda">
+            <button id="refresh-btn">Refresh Word</button>
+            <button onclick="correctPopup(), incorrectPopup()" id="check-btn">Check Word</button>
+        </div>
+    </div>
+    <div id="correct-message">
+        <h1>Congratulations</h1>
+        <p>Your guess is correct</p>
+        <img src="https://media.tenor.com/aZzZMl5mftEAAAAC/rick-roll.gif" alt="rick">
+        <button class="next-btn">Next</button>
+    </div>
+    <div id="incorrect-message">
+        <h1>Oooops!</h1>
+        <p>Wrong guess. You are a loser</p>
+        <img src="https://media.tenor.com/IKoNdRrNUucAAAAC/friends-chandler-bing.gif" alt="rick">
+        <button class="next-btn">Next</button>
+    </div>
+    
+</body>
+<script src="./Game.js"></script>
+</html>

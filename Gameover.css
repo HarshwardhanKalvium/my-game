@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("./Assets/game\ over\ background\ image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#heading{
+    font-size: 70px;
+    font-family: 'Londrina Shadow', sans-serif;
+    color: rgb(167, 1, 1);
+    text-shadow: 2px 2px black;
+    text-decoration: underline;
+}
+
+.scoreboard{
+    /* border: 2px solid red; */
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 37vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(189, 41, 0);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.scoreboard>h2{
+    color: rgb(144, 44, 74);
+    /* text-shadow: 2px 2px black; */
+    font-size: 40px;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px black;
+}
+.scoreboard>h1{
+    color: black;
+    font-size: 70px;
+}
+
+#quote{
+    font-size: 25px;
+    font-family: 'Lobster Two', sans-serif;
+    letter-spacing: 3px;
+}
+
+#some-random-guy{
+    font-size: 25px;
+    font-family: 'Lobster Two', sans-serif;
+}
+
+#replay-btn{
+    width: 10vw;
+    height: 9vh;
+    border-radius: 22px;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(131, 63, 63);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-family: 'Arimo', sans-serif;
+}
+#replay-btn:hover{
+    background-color: rgb(168, 254, 139);
+    /* box-shadow: rgba(208, 251, 38, 0.849) 0px 19px 38px, rgba(208, 251, 38, 0.849) 0px 15px 12px; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: black;
+}
+
+footer{
+    margin-top: 17.5vh;
+    text-align: center;
+    font-size: large;
+    color: black;
+    background-color: rgb(255, 204, 146);
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
